@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rollup",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A shareable ESLint configuration for Rollup projects",
   "license": "MIT",
   "repository": "rollup/eslint-config-rollup",
@@ -21,14 +21,18 @@
     "LICENSE"
   ],
   "dependencies": {
-    "eslint": "^6.2.2",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.14.2"
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^2.0.5"
   },
   "keywords": [
     "eslint",
     "config",
     "rollup"
-  ]
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.0"
+  }
 }

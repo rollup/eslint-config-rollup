@@ -1,13 +1,32 @@
 {
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "mocha": true
+  },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 9,
-    "sourceType": "module",
     "ecmaFeatures": {
       "generators": false,
       "objectLiteralDuplicateProperties": false
-    }
+    },
+    "ecmaVersion": 9,
+    "project": "/tsconfig.json",
+    "sourceType": "module"
   },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
   "rules": {
+    "@typescript-eslint/consistent-type-assertions": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "prefer-object-spread": "error",
     "prettier/prettier": [
       "error",
       {
@@ -589,13 +608,6 @@
       }
     ]
   },
-  "env": {
-    "es6": true,
-    "node": true,
-    "jest": true,
-    "mocha": true
-  },
-  "plugins": ["import", "prettier"],
   "settings": {
     "import/resolver": {
       "node": {

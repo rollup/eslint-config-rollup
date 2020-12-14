@@ -25,6 +25,7 @@
     "@typescript-eslint/consistent-type-definitions": "error",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "prefer-object-spread": "error",
     "prettier/prettier": [
@@ -140,7 +141,7 @@
       }
     ],
     "no-proto": "error",
-    "no-redeclare": "error",
+    "no-redeclare": "off",
     "no-restricted-properties": [
       "error",
       {

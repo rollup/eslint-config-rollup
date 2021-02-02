@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "es6": true,
     "node": true,
@@ -30,12 +30,7 @@
     "prefer-object-spread": "error",
     "prettier/prettier": [
       "error",
-      {
-        "arrowParens": "always",
-        "printWidth": 100,
-        "singleQuote": true,
-        "trailingComma": "none"
-      }
+      require('./prettier.js')
     ],
     "strict": "error",
     "accessor-pairs": "off",

@@ -6,12 +6,7 @@ module.exports = {
     ...baseConfig.rules,
     'prettier/prettier': [
       'error',
-      {
-        arrowParens: 'always',
-        printWidth: 100,
-        singleQuote: true,
-        trailingComma: 'none'
-      }
+      require('./prettier.js')
     ],
   }
 };

@@ -1,4 +1,4 @@
-module.exports = {
+{
   "env": {
     "es6": true,
     "node": true,
@@ -28,10 +28,6 @@ module.exports = {
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "prefer-object-spread": "error",
-    "prettier/prettier": [
-      "error",
-      require('./prettier.js')
-    ],
     "strict": "error",
     "accessor-pairs": "off",
     "array-callback-return": "error",

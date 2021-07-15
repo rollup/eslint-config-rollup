@@ -18,6 +18,7 @@
     "configs",
     "index.js",
     "prettier.js",
+    "vanilla.js",
     "LICENSE",
     "README.md"
   ],
@@ -35,5 +36,8 @@
     "eslint",
     "config",
     "rollup"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }

@@ -9,4 +9,6 @@ Object.keys(vanilla.rules).forEach((key) => {
   if (key.startsWith('@typescript')) delete vanilla.rules[key];
 });
 
+vanilla.rules['no-unused-vars'] = 'error';
+
 module.exports = vanilla;

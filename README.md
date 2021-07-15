@@ -4,8 +4,10 @@ A shareable ESLint configuration for Rollup projects
 
 ## Install
 
+This repository uses PNPM (https://pnpm.io/)
+
 ```
-$ npm install eslint-config-rollup --save-dev
+$ pnpm install eslint-config-rollup --save-dev
 ```
 
 ## Usage
@@ -30,6 +32,9 @@ This config can be used one of two ways:
   "extends": "rollup"
 }
 ```
+## Prettier
+
+This package also exports the [prettier config](./prettier.js) that is used in the eslint config.
 
 ## License
 

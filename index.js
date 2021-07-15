@@ -1,12 +1,6 @@
-const baseConfig = require('./.eslintrc.json');
+const base = require('./configs/config.json');
+const prettier = require('./configs/prettier.json');
 
-module.exports = {
-  ...baseConfig,
-  rules: {
-    ...baseConfig.rules,
-    'prettier/prettier': [
-      'error',
-      require('./prettier.js')
-    ],
-  }
-};
+base.rules = Object.assign(base.rules, { 'prettier/prettier': ['error', prettier] });
+
+module.exports = base;

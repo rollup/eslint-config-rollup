@@ -4,8 +4,10 @@ A shareable ESLint configuration for Rollup projects
 
 ## Install
 
+This repository uses PNPM (https://pnpm.io/)
+
 ```
-$ npm install eslint-config-rollup --save-dev
+$ pnpm install eslint-config-rollup --save-dev
 ```
 
 ## Usage

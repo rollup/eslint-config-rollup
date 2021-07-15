@@ -1,6 +1,1 @@
-module.exports = {
-  "arrowParens": "always",
-  "printWidth": 100,
-  "singleQuote": true,
-  "trailingComma": "none"
-};
+module.exports = require('./configs/prettier.json');
